@@ -1,0 +1,3 @@
+Scénario :
+Vous êtes un élève dans une école de sorciers. Il y a interrogation demain de mathématicus, et vous n'avez pas révisé !
+BUT : Concocter une potion magique suffisamment puissante pour prolonger le sommeil du professeur...
