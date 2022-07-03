@@ -13,7 +13,7 @@ class EquationsPadlock extends ListEqualPadlock<int> {
       <em>Tiens, il semble que la porte soit bloquée par un sortilège de mathématicus !</em>
     </p>
     <p>~</p>
-    <p style="text-align: left; margin-bottom: 0;">
+    <p>
       <em>A</em>, <em>B</em>, <em>C</em> et <em>D</em> sont des nombres à un chiffre situés entre <em>1</em> et <em>9</em>.
       Les équations sont toutes vraies.
     </p>
@@ -23,7 +23,7 @@ class EquationsPadlock extends ListEqualPadlock<int> {
       <li><em>C</em> - <em>B</em> = <em>B</em></li>
       <li><em>A</em> × 4 = <em>D</em></li>
     </ul>
-    <p style="text-align: left;">
+    <p>
       <strong>Trouver <em>A</em>, <em>B</em>, <em>C</em> et <em>D</em>.</strong>
     </p>
     ''',

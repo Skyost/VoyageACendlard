@@ -1,8 +1,5 @@
-import 'dart:math';
-
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:voyage_a_pastlard/game/objects/happiness_mirror.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
 import 'package:voyage_a_pastlard/game/rooms/principal_office.dart';
 import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
 
@@ -41,7 +38,7 @@ class AbandonedClassroomRoom extends Room {
                 height: 122,
                 width: 128,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ce pupitre semble vieux.')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ce pupitre semble être très vieux.')),
             ),
             Interactable(
               id: 'web-1',
@@ -132,7 +129,7 @@ class AbandonedClassroomRoom extends Room {
                 width: 32,
               ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Message',
                   content: '''
                     <p>
@@ -142,7 +139,7 @@ class AbandonedClassroomRoom extends Room {
                     <p><strong>DANGER !</strong></p>
                     <p>
                       Cette salle de classe a été abandonnée à la suite d'expériences de magies malencontreuses.
-                      Y rentrer représente un danger de mort.
+                      Y entrer représente un danger de mort.
                     </p>
                     ''',
                 ));
@@ -168,7 +165,7 @@ class AbandonedClassroomRoom extends Room {
                 width: 137,
               ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Des carrés et encore des carrés',
                   content: '''
                   <p>
@@ -202,7 +199,7 @@ class AbandonedClassroomRoom extends Room {
                 digits: '14',
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: HappinessMirror.asset,

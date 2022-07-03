@@ -2,11 +2,14 @@ import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/material.dart';
 
 class TextPadlock extends ObjectEqualPadlock<String> {
+  final String codePromptText;
+
   TextPadlock({
     required super.title,
     required super.unlockMessage,
     required String answer,
     required super.failedToUnlockMessage,
+    this.codePromptText = 'Entrer le code ici',
   }) : super(
           validObject: answer.toLowerCase(),
         );
@@ -35,9 +38,9 @@ class _TextPadlockDialogState extends PadlockAlertDialogState<TextPadlockDialog>
         TextField(
           controller: controller,
           style: const TextStyle(fontSize: 20),
-          decoration: const InputDecoration(
-            labelText: 'Entrer la réponse ici',
-            icon: Icon(Icons.key),
+          decoration: InputDecoration(
+            labelText: widget.padlock.codePromptText,
+            icon: const Icon(Icons.key),
           ),
           onSubmitted: (value) => tryUnlock(),
           autofocus: true,

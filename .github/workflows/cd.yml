@@ -20,8 +20,9 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         channel: 'stable'
+        cache: true
     - name: Build ⚙️
-      run: flutter build web --web-renderer canvaskit --base-href "/Error1980/"
+      run: flutter build web --web-renderer canvaskit --base-href "/VoyageAPastlard/"
     - name: Deploy 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:

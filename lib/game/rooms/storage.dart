@@ -1,9 +1,6 @@
-import 'dart:math';
-
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:voyage_a_pastlard/game/objects/enchanted_spices.dart';
 import 'package:voyage_a_pastlard/game/objects/purple_crystals.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
 import 'package:voyage_a_pastlard/game/rooms/principal_office.dart';
 import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
 
@@ -53,7 +50,7 @@ class StorageRoom extends Room {
                 asset: PurpleCrystals.asset,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: PurpleCrystals.asset,
@@ -72,7 +69,7 @@ class StorageRoom extends Room {
                 asset: EnchantedSpices.asset,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: EnchantedSpices.asset,

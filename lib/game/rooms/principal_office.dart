@@ -1,11 +1,11 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:voyage_a_pastlard/game/objects/teachers_rooms_key.dart';
 import 'package:voyage_a_pastlard/game/rooms/abandoned_classroom.dart';
 import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
 import 'package:voyage_a_pastlard/game/rooms/storage.dart';
 import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
-import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 
 class PrincipalOfficeRoom extends Room {
   static const String roomId = 'principal-office';
@@ -35,7 +35,7 @@ class PrincipalOfficeRoom extends Room {
                 width: 191,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: TeachersRoomsKey.asset,
@@ -55,7 +55,7 @@ class PrincipalOfficeRoom extends Room {
                 width: 111,
               ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(
+                escapeGame.showDialog(
                   EscapeGameDialog(
                     title: 'Un code sympathique',
                     content: Column(
@@ -121,7 +121,7 @@ class PrincipalOfficeRoom extends Room {
                   width: 35,
                 ),
                 onTap: (escapeGame) {
-                  escapeGame.openDialog(const EscapeGameDialog(
+                  escapeGame.showDialog(const EscapeGameDialog(
                     title: 'Des points et des tirets',
                     content: '''
                     <p>
@@ -161,7 +161,7 @@ class PrincipalOfficeRoom extends Room {
                 height: 153,
                 width: 33,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'La lumière de lune éclaire ce pilier.')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'La lumière de la lune éclaire ce pilier.')),
             ),
             Interactable(
               id: 'pillar-3',

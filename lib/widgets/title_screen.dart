@@ -38,7 +38,10 @@ class TitleScreen extends StatelessWidget {
                       applicationLegalese: "Copyright © 2022 Hugo Delaunay. Tous droits réservés.\nTous les graphismes ont été créés par upklyak.",
                     );
                   },
-                  child: Image.asset('assets/titlescreen-text.png'),
+                  child: Image.asset(
+                    'assets/titlescreen-text.png',
+                    width: 404,
+                  ),
                 ),
               ),
             ),

@@ -51,7 +51,7 @@ class LobbyRoom extends Room {
               onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Vers les chambres des professeurs')),
               onTap: (escapeGame) {
                 if (!escapeGame.inventory.hasObjectId(TeachersRoomsKey.objectId)) {
-                  escapeGame.openDialog(const EscapeGameDialog(
+                  escapeGame.showDialog(const EscapeGameDialog(
                     title: 'Porte fermée à clé',
                     content: "<em>Mince, la porte du couloir menant aux chambres des professeurs est fermée à clé.</em>",
                   ));
@@ -94,7 +94,7 @@ class LobbyRoom extends Room {
                 if (lobby.getInteractableById('trapdoor') != null) {
                   return const ActionResult.success();
                 }
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Message',
                   content: '<em>Tiens, un interrupteur !</em>',
                 ));

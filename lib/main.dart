@@ -27,8 +27,8 @@ Future<void> adjustWindowSize() async {
     await windowManager.setTitleBarStyle(TitleBarStyle.normal, windowButtonVisibility: false);
     await windowManager.setSize(size);
     await windowManager.setMinimumSize(size);
-    await windowManager.setMaximumSize(size);
-    await windowManager.setResizable(false);
+    // await windowManager.setMaximumSize(size);
+    // await windowManager.setResizable(false);
     await windowManager.center();
     await windowManager.show();
   });

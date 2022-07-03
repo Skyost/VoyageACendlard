@@ -169,7 +169,7 @@ class AbandonedLibraryRoom extends Room {
                 width: 80,
               ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Livre de recettes',
                   content: '''
                   <h2>Antidote d'orage</h2>
@@ -274,7 +274,7 @@ class AbandonedLibraryRoom extends Room {
                 width: 88,
               ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Un bien long calcul',
                   content: '''
                   <p>

@@ -50,7 +50,7 @@ class _MainWidgetState extends State<MainWidget> {
         title: 'Voyage à Pastlard',
         theme: ThemeData(
           primarySwatch: Colors.deepPurple,
-          scrollbarTheme: const ScrollbarThemeData(isAlwaysShown: true),
+          scrollbarTheme: ScrollbarThemeData(thumbVisibility: MaterialStateProperty.all(true)),
         ),
         locale: const Locale('fr'),
         localizationsDelegates: const [
@@ -60,6 +60,8 @@ class _MainWidgetState extends State<MainWidget> {
         ],
         supportedLocales: const [Locale('fr')],
         home: EscapeGameWidget(
+          baseSize: const Size(985.05, 396.31),
+          backgroundColor: Colors.black,
           beforeGameStartBuilder: (context, escapeGame) => TitleScreen(
             child: Positioned(
               bottom: 60,
@@ -104,7 +106,7 @@ class _MainWidgetState extends State<MainWidget> {
                         text: '''\n~\n
 La potion de sommeil a fait effet, et votre professeur de mathématicus ne s'est pas réveillé à temps pour l'interrogation.
 Cependant, après investigation, le proviseur a constaté que vous vous étiez introduit dans son bureau et a ainsi découvert
-la suite de votre machination... Vous avez donc été condammé à passer le reste de l'année en retenue pour travailler vos
+toute votre machination... Vous avez donc été condammé à passer le reste de l'année en retenue pour travailler vos
 mathématicus !''',
                       ),
                       TextSpan(

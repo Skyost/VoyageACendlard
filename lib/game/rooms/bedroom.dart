@@ -13,13 +13,13 @@ class BedroomRoom extends Room {
       : super(
           id: roomId,
           onFirstVisit: (escapeGame) {
-            escapeGame.openDialog(
+            escapeGame.showDialog(
               const EscapeGameDialog(
                 content: '''<h1>🪄 Bienvenue !</h1>
                 <p>
                   <em>
                     Vous êtes élève à l'école Pastlard, un établissement magique peuplé de jeunes apprentis sorciers.
-                    <br>Vous vous êtes réveillé en pleine nuit, car, demain, vous avez interrogation de mathématicus,
+                    <br>Vous vous êtes réveillé en pleine nuit car, demain, vous avez interrogation de mathématicus,
                     la matière tant redoutée par les élèves de Pastlard... Et vous n'avez pas du tout révisé !
                   </em>
                 </p>
@@ -113,7 +113,7 @@ class BedroomRoom extends Room {
                 height: 64,
                 width: 43,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ces os sont en suspend.')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ces os sont suspendus.')),
             ),
             Interactable(
               id: 'mushrooms',
@@ -123,7 +123,7 @@ class BedroomRoom extends Room {
                 height: 61,
                 width: 34,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ces champignons qui dégagent une forte odeur de vanille.')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Ces champignons dégagent une forte odeur de vanille.')),
             ),
             Interactable(
               id: 'books',
@@ -147,7 +147,7 @@ class BedroomRoom extends Room {
                 height: 184,
                 width: 58,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'C\'est un sceptre magique !')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Un sceptre magique !')),
             ),
             PickableObject(
               id: 'hericorne-claw',
@@ -159,7 +159,7 @@ class BedroomRoom extends Room {
                 width: 86,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: HericorneClaw.asset,
@@ -202,9 +202,14 @@ class BedroomRoom extends Room {
             ),
             Interactable(
               id: 'cauldron',
-              renderSettings: const InteractableRenderSettings(bottom: 19, left: 291, height: 130, asset: 'assets/interactables/cauldron.svg'),
+              renderSettings: const InteractableRenderSettings(
+                bottom: 19,
+                left: 295,
+                height: 137,
+                asset: 'assets/interactables/cauldron.svg',
+              ),
               onTap: (escapeGame) {
-                escapeGame.openDialog(EscapeGameDialog(
+                escapeGame.showDialog(EscapeGameDialog(
                   title: 'Confection de potions',
                   content: CauldronDialogContent(inventory: escapeGame.inventory),
                 ));

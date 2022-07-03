@@ -83,7 +83,7 @@ class ForgivenForestRoom extends Room {
                 height: 132,
                 width: 87,
               ),
-              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Tiens, il y a quelque-chose en bas de cet arbre...')),
+              onHover: (escapeGame) => const ActionResult.success(object: InteractableTooltip(text: 'Tiens, il y a quelque chose au pied de cet arbre...')),
             ),
             Interactable(
               id: 'tree-7',
@@ -135,7 +135,7 @@ class ForgivenForestRoom extends Room {
                 asset: Scaribo.asset,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: Scaribo.asset,
@@ -155,7 +155,7 @@ class ForgivenForestRoom extends Room {
                 width: 62,
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: ForestCards.asset,
@@ -178,7 +178,7 @@ class ForgivenForestRoom extends Room {
                 title: 'Une histoire de champignons',
                 unlockMessage: '''
                 <p>
-                  <em>Tiens, il y a quelque-chose derrière cet arbre...</em>
+                  <em>Tiens, il y a quelque chose derrière cet arbre...</em>
                 </p>
                 <img src="asset:assets/objects/champinum-enigma.svg" height="100">
                 <p>
@@ -200,9 +200,10 @@ class ForgivenForestRoom extends Room {
                 ''',
                 answer: 'Le champignon',
                 failedToUnlockMessage: "Aïe, il m'a mordu !\nJe pense que ce n'est pas la bonne réponse...",
+                codePromptText: 'Entrer la réponse ici',
               ),
               onPickedUp: (escapeGame) {
-                escapeGame.openDialog(const EscapeGameDialog(
+                escapeGame.showDialog(const EscapeGameDialog(
                   title: 'Objet trouvé !',
                   content: ObjectFoundDialogContent(
                     asset: ChampinumEnigma.asset,
