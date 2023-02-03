@@ -1,17 +1,17 @@
-name: voyage_a_pastlard
-description: A new Flutter project.
+name: voyage_a_cendlard
+description: Voyage à Cendlard.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
-  escape_game_kit: ^0.3.0
-  flutter_svg: ^1.1.1
-  flutter_widget_from_html_core: ^0.8.5
-  animate_do: ^2.1.0
-  window_manager: ^0.2.5
+  escape_game_kit: ^0.3.1
+  flutter_svg: ^2.0.0
+  flutter_widget_from_html_core: ^0.9.1
+  animate_do: ^3.0.2
+  window_manager: ^0.3.0
   flutter:
     sdk: flutter
   flutter_localizations:

@@ -2,8 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:voyage_a_pastlard/widgets/title_screen.dart';
+import 'package:voyage_a_cendlard/widgets/title_screen.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -32,22 +31,22 @@ class _MainWidgetState extends State<MainWidget> {
     ]) {
       precacheImage(AssetImage(asset), context);
     }
-    for (String asset in [
-      // 'assets/interactables/arrow.svg',
-      // 'assets/objects/eight-key.svg',
-      // 'assets/objects/clover-key.svg',
-      // 'assets/objects/mouth-key.svg',
-      // 'assets/padlocks/caesar-1.svg',
-      // 'assets/padlocks/caesar-2.svg',
-    ]) {
-      precachePicture(ExactAssetPicture(SvgPicture.svgStringDecoderBuilder, asset), context);
-    }
+    // for (String asset in [
+    //   'assets/interactables/arrow.svg',
+    //   'assets/objects/eight-key.svg',
+    //   'assets/objects/clover-key.svg',
+    //   'assets/objects/mouth-key.svg',
+    //   'assets/padlocks/caesar-1.svg',
+    //   'assets/padlocks/caesar-2.svg',
+    // ]) {
+    //   precachePicture(ExactAssetPicture(SvgPicture.svgStringDecoderBuilder, asset), context);
+    // }
   }
 
   @override
   Widget build(BuildContext context) => MaterialApp(
         navigatorKey: navigatorKey,
-        title: 'Voyage à Pastlard',
+        title: 'Voyage à Cendlard',
         theme: ThemeData(
           primarySwatch: Colors.deepPurple,
           scrollbarTheme: ScrollbarThemeData(thumbVisibility: MaterialStateProperty.all(true)),
@@ -117,7 +116,7 @@ mathématicus !''',
                         ),
                       ),
                     ],
-                    style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: Colors.white,
                         ),
                   ),

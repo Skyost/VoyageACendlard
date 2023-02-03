@@ -1,9 +1,8 @@
 import 'dart:math';
 
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/padlocks/valid_object_padlock.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
-import 'package:voyage_a_pastlard/game/rooms/teachers_bedrooms.dart';
+import 'package:voyage_a_cendlard/game/padlocks/valid_object_padlock.dart';
+import 'package:voyage_a_cendlard/game/rooms/teachers_bedrooms.dart';
 
 class TeacherBedroomRoom extends Room {
   static const String roomId = 'teacher-bedroom';

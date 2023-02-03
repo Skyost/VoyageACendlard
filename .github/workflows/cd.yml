@@ -22,7 +22,7 @@ jobs:
         channel: 'stable'
         cache: true
     - name: Build ⚙️
-      run: flutter build web --web-renderer canvaskit --base-href "/VoyageAPastlard/"
+      run: flutter build web --web-renderer canvaskit --base-href "/VoyageACendlard/"
     - name: Deploy 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:

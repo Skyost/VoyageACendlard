@@ -1,12 +1,12 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:voyage_a_pastlard/game/game.dart';
-import 'package:voyage_a_pastlard/game/padlocks/equations_padlock.dart';
-import 'package:voyage_a_pastlard/game/padlocks/find_x_padlock.dart';
-import 'package:voyage_a_pastlard/game/padlocks/text_padlock.dart';
-import 'package:voyage_a_pastlard/game/padlocks/valid_object_padlock.dart';
-import 'package:voyage_a_pastlard/widgets/main_widget.dart';
+import 'package:voyage_a_cendlard/game/game.dart';
+import 'package:voyage_a_cendlard/game/padlocks/equations_padlock.dart';
+import 'package:voyage_a_cendlard/game/padlocks/find_x_padlock.dart';
+import 'package:voyage_a_cendlard/game/padlocks/text_padlock.dart';
+import 'package:voyage_a_cendlard/game/padlocks/valid_object_padlock.dart';
+import 'package:voyage_a_cendlard/widgets/main_widget.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() {
@@ -15,7 +15,7 @@ void main() {
     adjustWindowSize();
   }
   registerPadlocks();
-  VoyageAPastlardGame escapeGame = VoyageAPastlardGame();
+  VoyageACendlardGame escapeGame = VoyageACendlardGame();
   runApp(MainWidget(escapeGame: escapeGame));
 }
 

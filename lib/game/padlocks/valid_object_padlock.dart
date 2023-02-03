@@ -1,7 +1,7 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:voyage_a_pastlard/game/objects/sleeping_potion.dart';
+import 'package:voyage_a_cendlard/game/objects/sleeping_potion.dart';
 
 class ValidObjectPadlock extends ObjectEqualPadlock<String> {
   ValidObjectPadlock({

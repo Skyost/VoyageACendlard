@@ -1,8 +1,8 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/objects/enchanted_spices.dart';
-import 'package:voyage_a_pastlard/game/objects/purple_crystals.dart';
-import 'package:voyage_a_pastlard/game/rooms/principal_office.dart';
-import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
+import 'package:voyage_a_cendlard/game/objects/enchanted_spices.dart';
+import 'package:voyage_a_cendlard/game/objects/purple_crystals.dart';
+import 'package:voyage_a_cendlard/game/rooms/principal_office.dart';
+import 'package:voyage_a_cendlard/widgets/object_found_dialog_content.dart';
 
 class StorageRoom extends Room {
   static const String roomId = 'storage';

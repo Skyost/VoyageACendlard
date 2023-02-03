@@ -1,11 +1,11 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/objects/teachers_rooms_key.dart';
-import 'package:voyage_a_pastlard/game/padlocks/equations_padlock.dart';
-import 'package:voyage_a_pastlard/game/padlocks/text_padlock.dart';
-import 'package:voyage_a_pastlard/game/rooms/bedroom.dart';
-import 'package:voyage_a_pastlard/game/rooms/forgiven_forest.dart';
-import 'package:voyage_a_pastlard/game/rooms/principal_office.dart';
-import 'package:voyage_a_pastlard/game/rooms/teachers_bedrooms.dart';
+import 'package:voyage_a_cendlard/game/objects/teachers_rooms_key.dart';
+import 'package:voyage_a_cendlard/game/padlocks/equations_padlock.dart';
+import 'package:voyage_a_cendlard/game/padlocks/text_padlock.dart';
+import 'package:voyage_a_cendlard/game/rooms/bedroom.dart';
+import 'package:voyage_a_cendlard/game/rooms/forgiven_forest.dart';
+import 'package:voyage_a_cendlard/game/rooms/principal_office.dart';
+import 'package:voyage_a_cendlard/game/rooms/teachers_bedrooms.dart';
 
 class LobbyRoom extends Room {
   static const String roomId = 'lobby';

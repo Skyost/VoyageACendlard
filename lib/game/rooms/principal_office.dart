@@ -1,11 +1,11 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
-import 'package:voyage_a_pastlard/game/objects/teachers_rooms_key.dart';
-import 'package:voyage_a_pastlard/game/rooms/abandoned_classroom.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
-import 'package:voyage_a_pastlard/game/rooms/storage.dart';
-import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
+import 'package:voyage_a_cendlard/game/objects/teachers_rooms_key.dart';
+import 'package:voyage_a_cendlard/game/rooms/abandoned_classroom.dart';
+import 'package:voyage_a_cendlard/game/rooms/lobby.dart';
+import 'package:voyage_a_cendlard/game/rooms/storage.dart';
+import 'package:voyage_a_cendlard/widgets/object_found_dialog_content.dart';
 
 class PrincipalOfficeRoom extends Room {
   static const String roomId = 'principal-office';
@@ -65,7 +65,7 @@ class PrincipalOfficeRoom extends Room {
                           child: HtmlWidget('''
                             <div align="center">
                               <p>
-                                <em>Il y a une post-it sur le bureau, mais le texte est effacé par endroits...</em>
+                                <em>Il y a un post-it sur le bureau, mais le texte est effacé par endroits...</em>
                               </p>
                               <p>~</p>
                             </div>

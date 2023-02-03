@@ -3,13 +3,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
-import 'package:voyage_a_pastlard/game/objects/champinum_enigma.dart';
-import 'package:voyage_a_pastlard/game/objects/enchanted_spices.dart';
-import 'package:voyage_a_pastlard/game/objects/happiness_mirror.dart';
-import 'package:voyage_a_pastlard/game/objects/hericorne_claw.dart';
-import 'package:voyage_a_pastlard/game/objects/ingredient.dart';
-import 'package:voyage_a_pastlard/game/objects/scaribo.dart';
-import 'package:voyage_a_pastlard/game/objects/sleeping_potion.dart';
+import 'package:voyage_a_cendlard/game/objects/champinum_enigma.dart';
+import 'package:voyage_a_cendlard/game/objects/enchanted_spices.dart';
+import 'package:voyage_a_cendlard/game/objects/happiness_mirror.dart';
+import 'package:voyage_a_cendlard/game/objects/hericorne_claw.dart';
+import 'package:voyage_a_cendlard/game/objects/ingredient.dart';
+import 'package:voyage_a_cendlard/game/objects/scaribo.dart';
+import 'package:voyage_a_cendlard/game/objects/sleeping_potion.dart';
 
 class CauldronDialogContent extends StatefulWidget {
   final Inventory inventory;

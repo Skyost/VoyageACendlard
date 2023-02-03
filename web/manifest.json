@@ -1,11 +1,11 @@
 {
-    "name": "Voyage à Pastlard",
-    "short_name": "Voyage à Pastlard",
+    "name": "Voyage à Cendlard",
+    "short_name": "Voyage à Cendlard",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#673AB7",
     "theme_color": "#673AB7",
-    "description": "Voyage à Pastlard.",
+    "description": "Voyage à Cendlard.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

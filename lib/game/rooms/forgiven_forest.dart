@@ -1,12 +1,12 @@
 import 'dart:math';
 
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/objects/champinum_enigma.dart';
-import 'package:voyage_a_pastlard/game/objects/forest_cards.dart';
-import 'package:voyage_a_pastlard/game/objects/scaribo.dart';
-import 'package:voyage_a_pastlard/game/padlocks/text_padlock.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
-import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
+import 'package:voyage_a_cendlard/game/objects/champinum_enigma.dart';
+import 'package:voyage_a_cendlard/game/objects/forest_cards.dart';
+import 'package:voyage_a_cendlard/game/objects/scaribo.dart';
+import 'package:voyage_a_cendlard/game/padlocks/text_padlock.dart';
+import 'package:voyage_a_cendlard/game/rooms/lobby.dart';
+import 'package:voyage_a_cendlard/widgets/object_found_dialog_content.dart';
 
 class ForgivenForestRoom extends Room {
   static const String roomId = 'forgiven-forest';

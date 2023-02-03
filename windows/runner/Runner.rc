@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "Hugo Delaunay" "\0"
-            VALUE "FileDescription", "Voyage à Pastlard" "\0"
+            VALUE "FileDescription", "Voyage à Cendlard" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "Voyage à Pastlard" "\0"
+            VALUE "InternalName", "Voyage à Cendlard" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 Hugo Delaunay. Tous droits réservés." "\0"
-            VALUE "OriginalFilename", "Voyage à Pastlard.exe" "\0"
-            VALUE "ProductName", "Voyage à Pastlard" "\0"
+            VALUE "OriginalFilename", "Voyage à Cendlard.exe" "\0"
+            VALUE "ProductName", "Voyage à Cendlard" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,10 +1,10 @@
 import 'dart:math';
 
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/objects/hericorne_claw.dart';
-import 'package:voyage_a_pastlard/game/rooms/lobby.dart';
-import 'package:voyage_a_pastlard/widgets/cauldron_dialog_content.dart';
-import 'package:voyage_a_pastlard/widgets/object_found_dialog_content.dart';
+import 'package:voyage_a_cendlard/game/objects/hericorne_claw.dart';
+import 'package:voyage_a_cendlard/game/rooms/lobby.dart';
+import 'package:voyage_a_cendlard/widgets/cauldron_dialog_content.dart';
+import 'package:voyage_a_cendlard/widgets/object_found_dialog_content.dart';
 
 class BedroomRoom extends Room {
   static const String roomId = 'bedroom';
@@ -18,9 +18,9 @@ class BedroomRoom extends Room {
                 content: '''<h1>🪄 Bienvenue !</h1>
                 <p>
                   <em>
-                    Vous êtes élève à l'école Pastlard, un établissement magique peuplé de jeunes apprentis sorciers.
+                    Vous êtes élève à l'école Cendlard, un établissement magique peuplé de jeunes apprentis sorciers.
                     <br>Vous vous êtes réveillé en pleine nuit car, demain, vous avez interrogation de mathématicus,
-                    la matière tant redoutée par les élèves de Pastlard... Et vous n'avez pas du tout révisé !
+                    la matière tant redoutée par les élèves de Cendlard... Et vous n'avez pas du tout révisé !
                   </em>
                 </p>
                 <p>~</p>

@@ -1,5 +1,5 @@
 import 'package:escape_game_kit/escape_game_kit.dart';
-import 'package:voyage_a_pastlard/game/objects/ingredient.dart';
+import 'package:voyage_a_cendlard/game/objects/ingredient.dart';
 
 class ChampinumEnigma extends EscapeGameObject with Ingredient {
   static const String objectId = 'champinum-enigma';
