@@ -7,9 +7,9 @@ environment:
   sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
-  escape_game_kit: ^0.3.1
-  flutter_svg: ^2.0.0
-  flutter_widget_from_html_core: ^0.9.1
+  escape_game_kit: ^0.3.2
+  flutter_svg: ^2.0.1
+  flutter_widget_from_html_core: ^0.10.0
   animate_do: ^3.0.2
   window_manager: ^0.3.0
   flutter:

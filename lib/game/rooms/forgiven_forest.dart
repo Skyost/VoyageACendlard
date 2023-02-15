@@ -198,7 +198,7 @@ class ForgivenForestRoom extends Room {
                 </p>
                 <p><strong>Qui est-il ?</strong></p>
                 ''',
-                answer: 'Le champignon',
+                answer: 'Champignon',
                 failedToUnlockMessage: "Aïe, il m'a mordu !\nJe pense que ce n'est pas la bonne réponse...",
                 codePromptText: 'Entrer la réponse ici',
               ),
